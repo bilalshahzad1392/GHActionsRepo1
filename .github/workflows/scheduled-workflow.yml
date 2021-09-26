@@ -2,7 +2,7 @@ name: scheduled-workflow
 
 on:
   schedule:
-    - cron:  '25/5 * * * *'
+    - cron: '*/5 * * * *'
 
 jobs:
   # This workflow contains a single job called "build"
