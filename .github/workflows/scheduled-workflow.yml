@@ -1,0 +1,20 @@
+name: scheduled-workflow
+
+on:
+  schedule:
+    - cron:  '*/2 * * * *'
+
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    name: scheduled-job
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+      
+      - name: Test echo
+        run: echo Hello, world!
+
