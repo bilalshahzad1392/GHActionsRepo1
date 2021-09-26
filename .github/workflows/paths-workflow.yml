@@ -1,0 +1,25 @@
+
+name: paths-workflow
+
+on:  
+  push:
+    paths:
+      - 'Readme.md'
+      - 'docs/**'
+      - '!test.js'
+    branches: [ main ]
+    
+  workflow_dispatch:
+
+jobs:
+  
+  build:
+  
+    runs-on: ubuntu-latest
+    
+    steps:
+      
+      - uses: actions/checkout@v2
+      
+      - name: ReadMe Echo
+        run: echo ReadMe is updated
