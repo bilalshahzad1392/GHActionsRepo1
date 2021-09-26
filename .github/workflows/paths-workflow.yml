@@ -4,7 +4,7 @@ name: paths-workflow
 on:  
   push:
     paths:
-      - 'Readme.md'
+      - 'README.md'
       - 'docs/**'
       - '!test.js'
     branches: [ main ]
