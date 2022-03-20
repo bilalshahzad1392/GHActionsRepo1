@@ -18,6 +18,10 @@ jobs:
          empName: Bilal
        - empId: 2
          empName: Waqas
+       - empId: 3
+         empName: Faisal
+     fail-fast: true
+     max-parallel: 2
     
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
