@@ -30,7 +30,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run validation
-        if: github.event.inputs.empId == null || github.event.inputs.empId == 0 || github.event.inputs.empName == null || || github.event.inputs.empName == ''
+        if: github.event.inputs.empId == null || github.event.inputs.empId == 0 || github.event.inputs.empName == null || github.event.inputs.empName == ''
         run: echo "Invalid Inputs"; exit 1
 
       - name: Print Id & Name
